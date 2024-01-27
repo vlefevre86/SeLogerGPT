@@ -1,0 +1,6 @@
+python-dotenv
+openai
+requests
+parsel
+scrapfly-sdk
+python-telegram-bot

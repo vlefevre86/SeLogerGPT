@@ -1,0 +1,31 @@
+# Constants
+PROJECT_BUY_EXISTING = 2
+TYPE_HOUSE = 2
+NATURE_OLD = 1
+NATURE_NEW = 2
+NATURE_VIAGER = 4
+MANDATORY_COMMODITIES = 1
+NO = 0
+YES = 1
+
+# Search parameters
+natures = f"{NATURE_OLD},{NATURE_NEW},{NATURE_VIAGER}"
+insee_codes = '<insee_code>'
+price_min = '<min_price>'  # Example: 300000 or NaN if no minimum
+price_max = '<max_price>'  # Example: 500000 or NaN if no maximum
+surface_min = '<min_surface>'  # Example: 80 or NaN if no minimum
+surface_max = '<max_surface>'  # Example: 150 or NaN if no maximum
+bedrooms = '<number_of_bedrooms>'  # Example: '1,2,3' for specific counts or 'any' for no preference
+garden = '<garden_preference>'  # YES, NO, or 'either' for no preference
+
+# List of criteria for determining if a listing is interesting
+CRITERES_INTERESSANTS = [
+    'dans <desired_city>, pas dans une autre ville', 
+    'proche du <public_transport>', 
+    '<desired_neighborhood_1>',
+    '<PAS_desired_neighborhood_2>', 
+    # Add more neighborhoods as needed with 'desired' or 'PAS' (not) prefix
+    # Example: 'quartier gare' or 'PAS quartier jean jaures'
+]
+
+# Replace the placeholders with actual values when using this template.
