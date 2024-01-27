@@ -27,6 +27,8 @@ from search_config import (
     CRITERES_INTERESSANTS,
 )
 
+dotenv.load_dotenv()
+
 #################   CONFIGURATION   #################
 # State restoration files
 PROCESSED_ANNOUNCEMENTS_FILE = 'processed_urls.json' # File to load and save processed URLs
@@ -56,8 +58,6 @@ GPT_MODEL = "gpt-4-1106-preview"
 
 # Scrapfly API configuration
 SCRAPFLY_API_KEY = os.getenv('SCRAPFLY_API_KEY')
-
-dotenv.load_dotenv()
 
 ############ State restoration management ############
 # Function to save results to a file
